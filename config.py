@@ -20,3 +20,13 @@ register_routes(app)
 # app.register_blueprint(user_bp)
 # app.register_blueprint(datacenter)
 # app.register_blueprint(ai)
+
+#修改C4
+from flask import Flask
+from routes import register_routes
+from flask_cors import CORS
+from extensions import db
+from flask_jwt_extended import JWTManager
+from routes.user_routes import user_bp  # 添加这一行
+from routes.datacenter import datacenter  # 添加这一行
+from routes.ai import ai

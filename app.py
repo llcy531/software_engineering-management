@@ -43,3 +43,9 @@ completion = client.chat.completions.create(
 )
 # 打印AI模型的回复内容
 print(completion.choices[0].message.content)  # 输出AI助手的回复消息
+
+
+#修改C4
+import os
+# 导入OpenAI客户端库，用于与AI模型进行交互
+from openai import OpenAI

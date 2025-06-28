@@ -110,3 +110,15 @@ if __name__ == "__main__":
     # 执行批量导入
     process_csv_files(ROOT_DIR, DB_CONFIG,SQL)
     print("所有数据已批量导入完成！")
+
+
+##修改C4分支
+    SQL = """
+    INSERT INTO water_quality (
+        province, basin, section_name, monitor_time,
+        water_quality_level, temperature, pH, dissolved_oxygen,
+        conductivity, turbidity, permanganate_index,
+        ammonia_nitrogen, total_phosphorus, total_nitrogen,
+        chlorophyll_a, algae_density, station_status
+    ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    """
