@@ -3,3 +3,16 @@
 SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:123456@localhost/ocean_farm'
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 SQLALCHEMY_ECHO = True
+
+### 修改B3
+app.config['JWT_SECRET_KEY'] = 'a9fdg#12!@#A3fFj9z_Secret987' 
+jwt = JWTManager(app)  # ✅ 初始化 JWT 管理器
+db.init_app(app)
+
+# 使用register_routes函数注册所有路由
+register_routes(app)
+
+# 或者，如果你想直接注册蓝图，可以使用以下代码（二选一）
+# app.register_blueprint(user_bp)
+# app.register_blueprint(datacenter)
+# app.register_blueprint(ai)

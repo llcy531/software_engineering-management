@@ -43,3 +43,11 @@ completion = client.chat.completions.create(
 )
 # 打印AI模型的回复内容
 print(completion.choices[0].message.content)  # 输出AI助手的回复消息
+
+# 使用register_routes函数注册所有路由
+register_routes(app)
+
+# 或者，如果你想直接注册蓝图，可以使用以下代码（二选一）
+# app.register_blueprint(user_bp)
+# app.register_blueprint(datacenter)
+# app.register_blueprint(ai)
