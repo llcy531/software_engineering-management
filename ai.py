@@ -24,3 +24,8 @@ completion = client.chat.completions.create(
 )
 # 打印AI模型的回复内容
 print(completion.choices[0].message.content)  # 输出AI助手的回复消息
+
+#修改B3
+# 创建聊天完成请求，与AI模型进行对话
+completion = client.chat.completions.create(
+    # 模型列表：https://help.aliyun.com/zh/model-studio/getting-started/models

@@ -51,3 +51,8 @@ register_routes(app)
 # app.register_blueprint(user_bp)
 # app.register_blueprint(datacenter)
 # app.register_blueprint(ai)
+
+
+#修改B3
+jwt = JWTManager(app)  # ✅ 初始化 JWT 管理器
+db.init_app(app)

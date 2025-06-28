@@ -110,3 +110,9 @@ if __name__ == "__main__":
     # 执行批量导入
     process_csv_files(ROOT_DIR, DB_CONFIG,SQL)
     print("所有数据已批量导入完成！")
+
+
+##修改B3分支
+    # 执行批量导入
+    process_csv_files(ROOT_DIR, DB_CONFIG,SQL)
+    print("所有数据已批量导入完成！")

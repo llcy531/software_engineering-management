@@ -16,3 +16,9 @@ register_routes(app)
 # app.register_blueprint(user_bp)
 # app.register_blueprint(datacenter)
 # app.register_blueprint(ai)
+
+#修改B3
+messages=[  # 对话消息列表
+        {"role": "system", "content": "你是一个养殖渔场的专家，你会通过天气信息和渔场的水文信息给养殖户智能建议"},  # 系统角色设定，定义AI助手的专业领域和功能
+        {"role": "user", "content": "你是谁？"},  # 用户消息，询问AI的身份
+    ],
